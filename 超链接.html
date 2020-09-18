@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>超链接就</title>
+</head>
+<body>
+    <!--
+        超链接可以让我们从一个页面跳转
+        a 标签进行定义
+        target属性，用来指定超链接打开的位置
+        可选值：
+            _self默认值，在当前页面打开超链接
+            _blank 在一个新的页面打开超链接
+
+    -->
+    <a href="index1.html" target="_blank">超链接</a>
+    <!-- 回到页面顶部用# 不会跳转而是转到当前页面顶部-->>
+    <a href="#bottom">回到顶部</a>
+    <!-- 可以使用javascript:;使他什么都不发生-->>
+    <a href="javascript:;"></a>
+    <p>Lorem ipsum dolor, sit amet <br>consectetur adipisicing elit. Deleniti ad no<br><br><br><br><br>n ex odio ut nis<br>i nulla maiores, sequi consectetur excepturi. Aliquam nostrum quam consequuntur consequatur sequi commodi eum fugit pariatur.</p>
+    <p>Lorem ipsum dolor, sit amet<br> consectetur adipisicing elit. Deleniti ad no<br>n ex odio ut nisi<br> nulla maiores, sequi consectetur excepturi. Aliquam nostrum quam consequuntur consequatur sequi commodi eum fugit pariatur.</p>
+    <p>Lorem ipsum dolor, sit amet <br>consectetur adipisicing elit. Deleniti ad non <br><br><br>ex odio ut nisi n<br>ulla maiores, sequi consectetur excepturi. Aliquam nostrum quam consequuntur consequatur sequi commodi eum fugit pariatur.</p>
+    <p>Lorem ipsum dolor, sit amet c<br>onsectetur adipisicing elit. Deleniti ad<br><br><br> non ex odio ut nisi nu<br>lla maiores, sequi consectetur excepturi. Aliquam nostrum quam consequuntur consequatur sequi commodi eum fugit pariatur.</p>
+    <p>Lorem ipsum dolor, sit amet con<br>sectetur adipisicing elit. Deleniti ad non ex <br><br><br>odio ut nisi <br>nulla maiores, sequi consectetur excepturi. Aliquam nostrum quam consequuntur consequatur sequi commodi eum fugit pariatur.</p>
+
+    <!---# id属性 唯一不重复的-->
+    <a id="bottom" href="#">回到底部</a>
+</body>
+</html>
