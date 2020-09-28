@@ -1,21 +1,36 @@
-.logo{
+body{
+    z-index: 1;
+    /* 绝对定位父级 */
+    position:relative;
+    /* 背景图片 */
+    background-image: url("../img/二次元1.jpg");
+}
+.logos{
+    z-index: 5;
     /* 图片变圆 */
     height: 120px;
-    width: 120px;
-    border-radius: 50%;
+    width:120px;
+    border-radius: 70%;
     overflow: hidden;
-    /* 居中 */
-    margin: auto;
+    /* 绝对定位子 */
+    position:absolute;
+    left: 150px;
 }
 .sign{
-    /* 签名居中 */
-   text-align: center;
+    
+    /* 绝对定位 */
+   position:absolute;
+   z-index: 5;
+    left: 290px;
+    top: 65px;
+    color: #72b7df;
 }
 .list-nav{
-    width: 80%;
-    height: 40px;
+    
+    width:auto;
+    height: 50px;
     border: 1px solid #FFFFFF;
-    background-color: #848c8d;  
+    background-color:lightgray;  
     margin: 0 auto;
     opacity: 0.5;
 }
@@ -23,24 +38,60 @@
     text-align: center;
 }
 
-.nav ul li {
-     float: left; /* 浮动横向排列 */
+.nav ul  {
+    margin-top: 58px;
+    padding-top: 200px;
+     float: center; /* 浮动横向排列 */
      border: 1px solid #FFFFFF;
-     background-color: #848c8d;
      opacity: 0.5;
-     display:block;/*这个比较关键，因为a本身就是联级元素，本身不具有
-     宽高，用这个把它变成块级元素，这样前面设置的宽和高就能起作用了*/
+     /* display:block;/*这个比较关键，因为a本身就是联级元素，本身不具有
+     宽高，用这个把它变成块级元素，这样前面设置的宽和高就能起作用了*/ 
+     display: flex;
+     justify-content: center;
+     padding-top: 10px;
+
 }
-.nav ul li a{
-    width:80px;/*设置元素宽为80px*/
-    height:28px;/*设置高度为28px*/
+.nav ul li {
+    width:100px;/*设置元素宽为80px*/
+    height:30px;/*设置高度为28px*/
     line-height:28px;/*设置行距为28px，让文字在每行的中间位置*/
-    background:red;/*设置元素的背景为红色*/
+    background-color: #72b7df;/*设置元素的背景为红色*/
     color:#FFF;/*文字颜色是白色*/
     margin:5px 90px;
     font-size:12px;/*用12号字*/
     display:block;/*这个比较关键，因为a本身就是联级元素，本身不具有宽高，用这个把它变成块级元素，这样前面设置的宽和高就能起作用了*/
     text-align:center;/*让文本居中*/
     text-decoration:none; /*去掉下划线*/
+   
+}
+
+#main{
+ 
+   padding-top: 30px;
+    margin:20px auto;
+    height:400px;
+    width: 80%;
+    opacity: 0.5;
+    background-color: aliceblue;
+
+  
+}
+.main-my{
+    float: right;
+    color: #02284b;
+    text-align: center;
+    width: 50%;
+    background-color:aliceblue;
+}
+.main-mp4{
+    float: left;
+    width:50% ;
+    
+}
+address{
+    margin-top: 10px;
+    line-height: 30px;
+    text-align: center;
+    color: lightgrey;
     
 }

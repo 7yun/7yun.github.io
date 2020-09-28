@@ -9,25 +9,41 @@
     <h1 style="text-align: center;color:lightgray">我也不知道该叫个啥</h1>
     <hr style="margin-bottom: 100px;">
     <div class="main" style="width: 80%; margin:0 auto; opacity: 0.7; height: 400px; background-color: lightgrey; align-items: center; text-align:center;">
-    <ol style="line-height: 80px;text-align: left;">
+        <ol style="line-height: 80px;text-align: left;float: left;width: 20%;">
         <li>
-            <a href="./王鑫/index.html" style="color:brown ">王鑫</a>
+            <a href="./王鑫/index.html" style="color:brown ">王鑫</a><button id="wxUrl" onclick="wxUrl()">大爷来进来玩</button>
         </li>
         <li >
-            <a href="./靳尚元/1.html" style="color: magenta;">靳尚元</a>
+            <a href="./靳尚元/1.html" style="color: magenta;">靳尚元</a><button  id="jsyUrl" onclick="jsyUrl()">这里就不用进去看了，少女粉</button>
         </li>
         <li>
-            <a href="./周祥/简历.html" style="color: mediumaquamarine;">周祥</a>
+            <a href="./周祥/简历.html" style="color: mediumaquamarine;">周祥</a><button  id="zxUrl" onclick="zxUrl()">高冷男神的秋秋空间</button>
         </li>
         <li>
-            <a href="./张禹辰/index.html" style="color: mediumturquoise;">张禹辰</a>
+            <a href="./张禹辰/index.html" style="color: mediumturquoise;">张禹辰</a><button  id="zycUrl" onclick="zycUrl()">网抑郁患者请进</button>
         </li>
         <li>
-            <a href="./吴媛/index.html" style="color:slateblue">吴媛</a>
+            <a href="./吴媛/index.html" style="color:slateblue">吴媛</a><button  id="wyUrl" onclick="wyUrl()">不知道填啥就不填了</button>
         </li>
         
     </ol>
+    <iframe id="iframe" src="./王鑫/index.html" style="float: left; margin: auto; width: 60%; height: 400px;" frameborder="0"></iframe>
+    <p>个人简介</p>
 </div>
-<div></div>
+<script>
+    function wxUrl(){
+        document.getElementById("iframe").src="./王鑫/index.html";
+    }
+    function jsyUrl(){
+        document.getElementById("iframe").src="./靳尚元/1.html";
+    }
+    function zxUrl(){
+        document.getElementById("iframe").src="./周祥/简历.html";
+    }function zycUrl(){
+        document.getElementById("iframe").src="./张禹辰/index.html";
+    }function wyUrl(){
+        document.getElementById("iframe").src="./吴媛/index.html";
+    }
+</script>
 </body>
 </html>
